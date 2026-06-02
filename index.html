@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pal Signs · Where Names Learn to Glow</title>
+    <meta
+      name="description"
+      content="Pal Signs builds custom illuminated signage, channel letters, lightboxes, neon, and large format printing for businesses that refuse to blend in."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="assets/logo-white.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <header class="nav">
+      <a href="index.html" class="brand" aria-label="Pal Signs home">
+        <img
+          class="brand-mark"
+          src="assets/logo-mark-white.png"
+          alt="Pal Signs Inc logo"
+          width="40"
+          height="35"
+        />
+        <span class="brand-text"
+          ><b>Pal Signs</b><span>Signage &amp; Print</span></span
+        >
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="work.html">Work</a>
+        <a href="signs.html">Signs</a>
+        <a href="printing.html">Printing</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+      </nav>
+      <button class="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero wrap">
+        <div class="hero-halo"></div>
+        <div class="hero-inner">
+          <span class="eyebrow hero-eyebrow"
+            >Custom Fabrication · Est. Craft</span
+          >
+          <h1 class="wordmark">
+            <span class="ln"><span>Pal</span></span>
+            <span class="ln"><em>Signs</em></span>
+          </h1>
+          <svg class="hero-stroke" viewBox="0 0 460 40" aria-hidden="true">
+            <path d="M6 28 C70 6, 150 6, 220 20 C290 34, 380 32, 454 12" />
+          </svg>
+          <p
+            class="typer"
+            aria-label="We build channel letters, neon, and storefront facades."
+          >
+            We build&nbsp;<span
+              class="tw"
+              data-words="channel letters.|backlit neon.|storefront facades.|your name, in light."
+            ></span>
+          </p>
+          <p class="hero-sub">
+            We turn names into landmarks. Custom illuminated signage and large
+            format printing for the businesses that refuse to blend in.
+          </p>
+          <div class="hero-actions">
+            <a href="work.html" class="btn btn-glow"
+              >See the work <span class="arr">→</span></a
+            >
+            <a href="contact.html" class="btn btn-ghost">Start a project</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Ageless</span><span>Aslan Market</span><span>Beirut</span
+          ><span>Phillistines</span><span>Samir Halal Foods</span
+          ><span>Damascus Butcher</span><span>Hii Pot</span
+          ><span>Jerusalem Shawarma</span><span>Znoud Alhamadani</span>
+          <span>Ageless</span><span>Aslan Market</span><span>Beirut</span
+          ><span>Phillistines</span><span>Samir Halal Foods</span
+          ><span>Damascus Butcher</span><span>Hii Pot</span
+          ><span>Jerusalem Shawarma</span><span>Znoud Alhamadani</span>
+        </div>
+      </div>
+
+      <!-- ANATOMY · the living channel letter -->
+      <section id="anatomy" class="section wrap">
+        <div class="anat-head reveal">
+          <span class="eyebrow" style="justify-content: center"
+            >Anatomy of a letter</span
+          >
+          <h2>Every sign is engineered before it&rsquo;s <em>lit.</em></h2>
+          <p>
+            A channel letter is a small building &mdash; aluminium return, cast
+            acrylic face, trim cap, and an even bed of LEDs. Drawn at true scale,
+            then brought to light. Move your cursor across it.
+          </p>1
+        </div>
+
+        <div
+          class="letterstage reveal"
+          id="letterstage"
+          role="img"
+          aria-label="The Pal Signs logo, fabricated as a dimensional channel sign in daylight, then powered on at dusk as glowing neon."
+        >
+          <div class="ls-grid"></div>
+          <div class="ls-wall"></div>
+
+          <!-- the 3D camera target (tilts toward the cursor) -->
+          <div class="ls-scene">
+            <!-- JS extrudes a real depth stack of the logo into here. The light
+                 field lives INSIDE the letter so the glow, bloom and reflection
+                 are welded to the sign and track its every tilt and sway. -->
+            <div class="ls-letter">
+              <div class="ls-glow" aria-hidden="true">
+                <div class="ls-amb"></div>
+                <div class="ls-bloomglyph"></div>
+                <div class="ls-reflectglyph"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- daylight blueprint call-outs -->
+          <div class="ls-annot ls-a1"><span class="dot"></span><span><b>01</b> Aluminium return</span></div>
+          <div class="ls-annot ls-a2"><span class="dot"></span><span><b>02</b> Acrylic face</span></div>
+          <div class="ls-annot ls-a3"><span class="dot"></span><span><b>03</b> Trim cap</span></div>
+
+          <span class="ls-tag">Pal Signs · channel letter · live build</span>
+        </div>
+
+        <ul class="bp-specs anat-specs reveal">
+          <li><b>01</b> Aluminium return, welded &amp; primed</li>
+          <li><b>02</b> Cast-acrylic face, color-matched</li>
+          <li><b>03</b> Trim cap finish to your palette</li>
+          <li><b>04</b> Low-draw LED modules, evenly spaced</li>
+        </ul>
+      </section>
+
+      <!-- FEATURED WORK -->
+      <section class="section wrap" style="padding-top: 0">
+        <div
+          class="sec-head reveal"
+          style="
+            margin-bottom: clamp(32px, 5vw, 64px);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            max-width: none;
+            gap: 24px;
+            flex-wrap: wrap;
+          "
+        >
+          <div style="max-width: 560px">
+            <span class="eyebrow">Selected work</span>
+            <h2>Signs that earn a <em>second look.</em></h2>
+          </div>
+          <a href="work.html" class="btn btn-ghost"
+            >View full portfolio <span class="arr">→</span></a
+          >
+        </div>
+
+        <div class="jgal">
+          <div class="jrow">
+            <a href="work.html" class="work-card reveal" style="--ar: 0.75">
+              <img
+                src="assets/Ageless.webp"
+                alt="Ageless illuminated channel letters and backlit swan logo"
+                loading="lazy"
+              />
+              <div class="work-meta">
+                <div>
+                  <span class="tag">Channel Letters</span>
+                  <h3>Ageless</h3>
+                </div>
+              </div>
+            </a>
+            <a
+              href="work.html"
+              class="work-card reveal"
+              data-delay="1"
+              style="--ar: 1.333"
+            >
+              <img
+                src="assets/where-original-lives.webp"
+                alt="Where Original Lives custom neon feature wall"
+                loading="lazy"
+              />
+              <div class="work-meta">
+                <div>
+                  <span class="tag">Neon · LED</span>
+                  <h3>Where Original Lives</h3>
+                </div>
+              </div>
+            </a>
+            <a
+              href="work.html"
+              class="work-card reveal"
+              data-delay="2"
+              style="--ar: 1.333"
+            >
+              <img
+                src="assets/jeruselem-shawarma.webp"
+                alt="Jerusalem Shawarma illuminated storefront sign"
+                loading="lazy"
+              />
+              <div class="work-meta">
+                <div>
+                  <span class="tag">Channel Letters</span>
+                  <h3>Jerusalem Shawarma</h3>
+                </div>
+              </div>
+            </a>
+            <a
+              href="work.html"
+              class="work-card reveal"
+              data-delay="3"
+              style="--ar: 0.75"
+            >
+              <img
+                src="assets/damascus-butcher.webp"
+                alt="Damascus Butcher round backlit lightbox sign"
+                loading="lazy"
+              />
+              <div class="work-meta">
+                <div>
+                  <span class="tag">Lightbox</span>
+                  <h3>Damascus Butcher</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAPABILITIES -->
+      <section class="section wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">What we make</span>
+          <h2>Two crafts, one <em>standard.</em></h2>
+        </div>
+        <div class="caps reveal" style="margin-top: clamp(30px, 5vw, 56px)">
+          <div class="cap">
+            <span class="num">01</span>
+            <span class="ttl">Illuminated Signs</span>
+            <span class="desc"
+              >Channel letters, backlit lightboxes, neon and LED, dimensional
+              logos, and full storefront facades.</span
+            >
+          </div>
+          <div class="cap">
+            <span class="num">02</span>
+            <span class="ttl">Large Format Print</span>
+            <span class="desc"
+              >Banners, window graphics, posters, menus, and
+              custom apparel printed to last.</span
+            >
+          </div>
+          <div class="cap">
+            <span class="num">03</span>
+            <span class="ttl">Design &amp; Branding</span>
+            <span class="desc"
+              >Logo refinement, wordmark drawing, and the careful kerning a
+              fabricated sign demands.</span
+            >
+          </div>
+          <div class="cap">
+            <span class="num">04</span>
+            <span class="ttl">Install &amp; Service</span>
+            <span class="desc"
+              >Survey, permits, professional installation, and maintenance that
+              keeps your name lit.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="section wrap" style="padding-top: 0">
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="n">
+              <span class="cv" data-count="500">0</span><em>+</em>
+            </div>
+            <div class="l">Signs Fabricated</div>
+          </div>
+          <div class="stat">
+            <div class="n">
+              <span class="cv" data-count="19">0</span><em>yr</em>
+            </div>
+            <div class="l">In the Trade</div>
+          </div>
+          <div class="stat">
+            <div class="n">
+              <span class="cv" data-count="100">0</span><em>%</em>
+            </div>
+            <div class="l">Built In House</div>
+          </div>
+          <div class="stat">
+            <div class="n">
+              <span class="cv" data-count="48">0</span><em>h</em>
+            </div>
+            <div class="l">Quote Turnaround</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPLIT FEATURE -->
+      <section class="section wrap">
+        <div class="split reveal">
+          <div class="split-media">
+            <img
+              src="assets/Phillistines.webp"
+              alt="Phillistines Sweets and Bakery dimensional facade and patterned panel"
+              loading="lazy"
+            />
+            <div class="frame-glow"></div>
+          </div>
+          <div class="split-body">
+            <span class="eyebrow">The craft of being seen</span>
+            <h2>Drawn by hand. Built to <em>glow.</em></h2>
+            <p>
+              Every project begins on paper and ends on a wall. We mock the sign
+              at true scale, build it in our own shop, and tune the light until
+              your storefront reads from the far side of the street. No
+              outsourcing, no guesswork, no generic templates.
+            </p>
+            <a href="signs.html" class="btn btn-glow"
+              >Explore signage <span class="arr">→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BAND -->
+      <section class="section cta-band wrap">
+        <div class="halo"></div>
+        <div class="reveal">
+          <span class="eyebrow" style="justify-content: center"
+            >Ready when you are</span
+          >
+          <h2>Let us light up <em>your name.</em></h2>
+          <p>
+            Tell us about your space and your brand. We will sketch something
+            worth stopping for.
+          </p>
+          <a href="contact.html" class="btn btn-glow"
+            >Get a quote <span class="arr">→</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img
+            class="footer-logo"
+            src="assets/logo-white.png"
+            alt="Pal Signs Inc"
+            width="503"
+            height="303"
+          />
+          <p>
+            Custom illuminated signage and large format printing. Where names
+            learn to glow.
+          </p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="signs.html">Signs</a></li>
+            <li><a href="printing.html">Printing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="signs.html">Channel Letters</a></li>
+            <li><a href="signs.html">Neon &amp; LED</a></li>
+            <li><a href="printing.html">Window Graphics</a></li>
+            <li><a href="printing.html">Banners &amp; Print</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:hello@palsigns.co">hello@palsigns.co</a></li>
+            <li><a href="tel:+14037190077">+1 (403) 719 0077</a></li>
+            <li><a href="contact.html">Request a quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>© <span data-year>2026</span> Pal Signs. All rights reserved.</p>
+        <span class="ar">Light, made legible</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
