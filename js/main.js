@@ -204,20 +204,22 @@
     });
   }
 
-  /* ---------- Contact form (front-end demo) ---------- */
+  /* ---------- Contact form (opens an email to sales) ---------- */
   const form = document.querySelector("#quote-form");
   if (form) {
+    const TO = "sales@palsigns.ca";
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const note = form.querySelector(".form-note");
-      const btn = form.querySelector("button[type=submit]");
-      if (btn) { btn.disabled = true; btn.style.opacity = "0.6"; }
-      if (note) note.textContent = "Sending your brief into the light...";
-      setTimeout(() => {
-        if (note) note.textContent = "Received. We will be in touch within one business day.";
-        form.reset();
-        if (btn) { btn.disabled = false; btn.style.opacity = "1"; }
-      }, 1300);
+      const subject = (form.querySelector("[name=subject]")?.value || "").trim();
+      const message = (form.querySelector("[name=message]")?.value || "").trim();
+      if (!subject || !message) {
+        if (note) note.textContent = "Add a subject and a message, then send.";
+        return;
+      }
+      const href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+      if (note) note.textContent = "Opening your email app...";
+      window.location.href = href;
     });
   }
 

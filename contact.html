@@ -15,14 +15,14 @@
 
 <header class="nav">
   <a href="index.html" class="brand" aria-label="Pal Signs home">
-    <img class="brand-mark" src="assets/logo-mark-white.png" alt="Pal Signs Inc logo" width="40" height="35" />
-    <span class="brand-text"><b>Pal Signs</b><span>Signage &amp; Print</span></span>
+    <img class="brand-mark" src="assets/pal-signs-color-logo.png" alt="Pal Signs Inc" width="58" height="39" />
   </a>
   <nav class="nav-links" aria-label="Primary">
     <a href="index.html">Home</a>
     <a href="work.html">Work</a>
     <a href="signs.html">Signs</a>
     <a href="printing.html">Printing</a>
+    <a href="websites.html">Websites</a>
     <a href="contact.html" class="active">Contact</a>
     <a href="contact.html" class="nav-cta">Get a Quote</a>
   </nav>
@@ -45,40 +45,14 @@
       <!-- FORM -->
       <form id="quote-form" class="reveal" novalidate>
         <div class="field">
-          <label for="name">Your name</label>
-          <input id="name" name="name" type="text" placeholder="Jane Merchant" required />
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="What is this about?" required />
         </div>
         <div class="field">
-          <label for="business">Business name</label>
-          <input id="business" name="business" type="text" placeholder="The shop we are lighting up" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your space, the vibe, and when you need it."></textarea>
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0 24px;">
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@business.com" required />
-          </div>
-          <div class="field">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="(000) 000 0000" />
-          </div>
-        </div>
-        <div class="field">
-          <label for="service">What do you need?</label>
-          <select id="service" name="service">
-            <option>Illuminated sign / channel letters</option>
-            <option>Lightbox or cabinet sign</option>
-            <option>Neon or LED feature</option>
-            <option>Full storefront / facade</option>
-            <option>Banners or window graphics</option>
-            <option>Custom apparel or print</option>
-            <option>Not sure yet, help me</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="message">Tell us about it</label>
-          <textarea id="message" name="message" placeholder="Where is the space, what is the vibe, and when do you need it?"></textarea>
-        </div>
-        <button type="submit" class="btn btn-glow">Send the brief <span class="arr">→</span></button>
+        <button type="submit" class="btn btn-glow">Send the email <span class="arr">→</span></button>
         <p class="form-note" role="status" aria-live="polite"></p>
       </form>
 
@@ -86,14 +60,15 @@
       <aside class="contact-aside reveal" data-delay="1">
         <div class="info-block">
           <h4>Email</h4>
-          <a href="mailto:hello@palsigns.co">hello@palsigns.co</a>
+          <a href="mailto:sales@palsigns.ca">sales@palsigns.ca</a>
         </div>
         <div class="info-block">
           <h4>Phone</h4>
-          <a href="tel:+14037190077">+1 (403) 719 0077</a>
+          <a href="tel:+12897070332">(289) 707-0332</a>
         </div>
         <div class="info-block">
           <h4>Studio &amp; Workshop</h4>
+          <p class="small">#206 2835 23 St NE<br/>Calgary, AB T2E 7A4</p>
           <p class="small">By appointment. Surveys and site visits booked across the metro area, with installation crews on the road six days a week.</p>
         </div>
         <div class="info-block">
@@ -109,11 +84,16 @@
     </div>
   </section>
 
-  <!-- CLOSING IMAGE -->
+  <!-- LOCATION MAP -->
   <section class="section wrap" style="padding-top:0;">
-    <figure class="work-card r-wide reveal" style="aspect-ratio:21/9;">
-      <img src="assets/where-original-lives.webp" alt="Where Original Lives neon sign glowing in a dark room" loading="lazy" style="object-position:center;" />
-      <figcaption class="work-meta"><div><span class="tag">Your name belongs here</span><h3>Where original lives</h3></div></figcaption>
+    <figure class="map-card reveal">
+      <iframe
+        title="Pal Signs location — #206 2835 23 St NE, Calgary, AB T2E 7A4"
+        src="https://www.google.com/maps?q=%23206%202835%2023%20St%20NE%2C%20Calgary%2C%20AB%20T2E%207A4&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+      <figcaption class="work-meta"><div><span class="tag">Find us</span><h3>#206 2835 23 St NE, Calgary, AB&nbsp;T2E&nbsp;7A4</h3></div></figcaption>
     </figure>
   </section>
 </main>
@@ -121,19 +101,20 @@
 <footer class="footer wrap">
   <div class="footer-top">
     <div class="footer-brand">
-      <img class="footer-logo" src="assets/logo-white.png" alt="Pal Signs Inc" width="503" height="303" />
+      <img class="footer-logo" src="assets/pal-signs-color-logo.png" alt="Pal Signs Inc" width="583" height="390" />
       <p>Custom illuminated signage and large format printing. Where names learn to glow.</p>
     </div>
     <div><h4>Pages</h4><ul>
       <li><a href="index.html">Home</a></li><li><a href="work.html">Work</a></li>
       <li><a href="signs.html">Signs</a></li><li><a href="printing.html">Printing</a></li>
-      <li><a href="contact.html">Contact</a></li></ul></div>
+      <li><a href="websites.html">Websites</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div><h4>Services</h4><ul>
       <li><a href="signs.html">Channel Letters</a></li><li><a href="signs.html">Neon &amp; LED</a></li>
-      <li><a href="printing.html">Window Graphics</a></li><li><a href="printing.html">Banners &amp; Print</a></li></ul></div>
+      <li><a href="printing.html">Window Graphics</a></li><li><a href="printing.html">Banners &amp; Print</a></li>
+      <li><a href="websites.html">Website Design</a></li></ul></div>
     <div><h4>Get in touch</h4><ul>
-      <li><a href="mailto:hello@palsigns.co">hello@palsigns.co</a></li>
-      <li><a href="tel:+14037190077">+1 (403) 719 0077</a></li>
+      <li><a href="mailto:sales@palsigns.ca">sales@palsigns.ca</a></li>
+      <li><a href="tel:+12897070332">(289) 707-0332</a></li>
       <li><a href="contact.html">Request a quote</a></li></ul></div>
   </div>
   <div class="footer-bar">
