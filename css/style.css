@@ -775,6 +775,7 @@ a { color: inherit; text-decoration: none; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 100px); align-items: start; }
 .field { margin-bottom: 26px; position: relative; }
 .field label { display: block; font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.field label .optional { color: var(--muted-2); letter-spacing: 0.12em; }
 .field input, .field textarea, .field select {
   width: 100%; background: var(--card); border: 1px solid var(--line);
   color: var(--ink); font-family: var(--sans); font-size: 1rem;

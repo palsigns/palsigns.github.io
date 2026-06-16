@@ -45,6 +45,18 @@
       <!-- FORM -->
       <form id="quote-form" class="reveal" novalidate>
         <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone <span class="optional">(optional)</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="(289) 707-0332" autocomplete="tel" />
+        </div>
+        <div class="field">
           <label for="subject">Subject</label>
           <input id="subject" name="subject" type="text" placeholder="What is this about?" required />
         </div>

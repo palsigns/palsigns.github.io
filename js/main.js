@@ -208,16 +208,32 @@
   const form = document.querySelector("#quote-form");
   if (form) {
     const TO = "sales@palsigns.ca";
+    const emailOk = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const note = form.querySelector(".form-note");
+      const name = (form.querySelector("[name=name]")?.value || "").trim();
+      const email = (form.querySelector("[name=email]")?.value || "").trim();
+      const phone = (form.querySelector("[name=phone]")?.value || "").trim();
       const subject = (form.querySelector("[name=subject]")?.value || "").trim();
       const message = (form.querySelector("[name=message]")?.value || "").trim();
-      if (!subject || !message) {
-        if (note) note.textContent = "Add a subject and a message, then send.";
+      if (!name || !email || !subject || !message) {
+        if (note) note.textContent = "Add your name, email, a subject, and a message, then send.";
         return;
       }
-      const href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+      if (!emailOk(email)) {
+        if (note) note.textContent = "That email does not look right. Check it and send again.";
+        return;
+      }
+      const lines = [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        phone ? `Phone: ${phone}` : null,
+        "",
+        message,
+      ].filter((l) => l !== null);
+      const body = lines.join("\n");
+      const href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       if (note) note.textContent = "Opening your email app...";
       window.location.href = href;
     });
